@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 
 namespace AspMvcBasic.Models
 {
-    public class Provider : Entity
+    public class Fornecedor : Entity
     {
         public string Nome { get; set; }
         public string Documento { get; set; }
         public TipoFornecedor TipoFornecedor  { get; set; }
-        public Address Endereco { get; set; }
+        public Endereco Endereco { get; set; }
         public bool Ativo { get; set; }
 
         /* EF Relations */
-        public IEnumerable<Product> Products { get; set; }
+        public IEnumerable<Produto> Produtos { get; set; }
 
     }
 }

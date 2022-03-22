@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AspMvcBasic.Models
 {
-    public class Product : Entity
+    public class Produto : Entity
     {
-        public Guid ProviderKey { get; set; }
+        public Guid FornecedorId { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é Obrigatório")]
         [StringLength(200,ErrorMessage ="O Campo {0} Precisa ter Entre {2} e {1} Caracteres.", MinimumLength = 2)]
@@ -25,6 +25,6 @@ namespace AspMvcBasic.Models
         public bool Ativo { get; set; }
 
         /* EF Relation */
-        public Provider Providers { get; set; }
+        public Fornecedor Fornecedor { get; set; }
     }
 }

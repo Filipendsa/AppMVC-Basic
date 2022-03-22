@@ -13,8 +13,9 @@ namespace AspMvcBasic.Data
             : base(options)
         {
         }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Provider> Providers { get; set; }
-        public DbSet<Address> Enderecos { get; set; }
+
+        public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Fornecedor> Fornecedores { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
     }
 }

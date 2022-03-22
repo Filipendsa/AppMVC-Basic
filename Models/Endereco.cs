@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace AspMvcBasic.Models
 {
-    public class Address : Entity
+    public class Endereco : Entity
     {
-        public Guid ProviderId { get; set; }
+        public Guid FornecedorId { get; set; }
         public string Logradouro { get; set; }
         public string Numero { get; set; }
         public string Complemento { get; set; }
@@ -17,6 +17,6 @@ namespace AspMvcBasic.Models
         public string Estado { get; set; }
 
         /* EF Relation */
-        public Provider Providers { get; set; }
+        public Fornecedor Fornecedor { get; set; }
     }
 }
